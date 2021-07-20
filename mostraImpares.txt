@@ -1,7 +1,23 @@
-    funcao contaNumImpar(Number num) {
-        for (int i = 1; i <= num; i++) {
-            if (i % 2 != 0) {
-                System.out.print(i + " ");
-            }
+funcao contaNumImpar(Number num) {
+
+    List < Integer > list = new ArrayList < > ();
+    for (int i = 1; i <= num; i++) {
+        if (i % 2 != 0) {
+            list.add(i);
+
         }
     }
+
+    somaImpar(list);
+}
+
+public somaImpar(list) {
+
+    double sum = 0;
+
+    for (int i = 0; i < list.size(); i++) {
+
+        sum += list.get(i);
+}
+    System.out.println(sum);
+}
